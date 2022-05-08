@@ -146,6 +146,7 @@
 #str1,
 #str2,
 #str3 {
+    padding: 0%;
     /* content: none; */
     /* place-items: none; */
 }
