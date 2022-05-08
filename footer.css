@@ -61,13 +61,13 @@ button:hover{
     font-family: Brandon Text,Arial,sans-serif;
     font-weight: -50;
 }
-a{
+.content{
     color: grey;
     text-decoration: none;
     cursor: pointer;
     font-family: Brandon Text,Arial,sans-serif;
 }
-a:hover{
+.content:hover{
     transition: border-color 300ms;
     color: #00819d;
     text-decoration:underline;
