@@ -1,0 +1,152 @@
+
+
+ .container{
+   display: flex;
+    /* width: 95%; */
+   margin: 0%;
+   padding: 0%;
+   padding-top: 10%; 
+   
+ }
+ .container>div:nth-child(1){
+   width: 20%;
+   border-right: 5px rgb(190, 190, 190) solid;
+   position: relative;
+   margin: auto;
+   overflow: scroll;
+   padding-left: 4%;
+   height: 500px;
+ }
+ .container>div:nth-child(2){
+   overflow:scroll;
+   width: 80%; 
+   padding-left: 30px;
+   padding-right: 50px;
+   margin: auto;
+   height: 500px;
+   /* padding-left: 60%; */
+ }
+ 
+ .container>div::-webkit-scrollbar {
+   width: 0%;
+ }
+
+
+       ::-webkit-scrollbar-track {
+   box-shadow: inset 0 0 5px grey; 
+   border-radius: 1x;
+ }
+ 
+ /* Handle */
+ ::-webkit-scrollbar-thumb {
+   background: red; 
+   border-radius: 1px;
+   width:1px
+ }
+
+   .main{
+       
+       width: 80%;
+       margin: auto;
+       display: grid;
+       grid-template-columns: repeat(4,1fr);
+       gap: 10px;
+   }
+
+   .main>div{
+       margin: auto;
+       width: 100%;
+       height: auto;
+       text-decoration: none;
+       font-style: normal;
+   }
+  
+
+   img:hover{
+      cursor: pointer;
+      -ms-transform: scale(0.5); 
+     -webkit-transform: scale(0.4); 
+     transform: scale(1.1); 
+   }
+   img{
+       width: 100%;
+       height: 60%;
+       margin: auto;
+       position:relative;
+       transition: transform 1.2s;
+   }
+  button{
+    border: none;
+    margin-left: 20%;
+    color: rgb(241, 238, 238);
+    background-color: white;
+    /* position: absolute; */
+  }
+  button:hover{
+    border: 1px solid rgb(0, 128, 43);
+    width: 70%;
+    height: 60px;
+    color: rgb(0, 128, 43);
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+   p{
+       margin: 5px;
+   }
+   select{
+     width: 80%;
+     margin: auto;
+     height: 50px;
+     border: none;
+     margin-left: 5%;
+     font-size: 16px;
+   }
+   select>option{
+     color: rgb(21, 2, 26);
+     font-size: 16px;
+   }
+   h3:hover{
+     color: blue;
+     text-decoration: underline;
+     cursor: pointer;
+     font-size: 19px;
+   }
+   h3+p{
+     font-style: italic;
+   }
+   spen{
+     color: red;
+     font-size: 22px;
+     font-weight: 900;
+   }
+   h5{
+     margin: auto;
+     color: red;
+   }
+   h5+p{
+     text-decoration: line-through;
+     font-size: 18px;
+   }
+
+    @media all and (min-width:50px) and (max-width:450px){
+      .main{
+       
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 6px;
+    }
+    }
+
+    @media all and (min-width:451px) and (max-width:750px){
+      .main{
+       
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 6px;
+    }
+    }
