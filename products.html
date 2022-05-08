@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    products
+</body>
+
+</html>
+<script>
+    var prodes = JSON.parse(localStorage.getItem("products"));
+    console.log(prodes)
+    displayData2(prodes)
+
+    function displayData2(data1) {
+        data1.forEach(function(elem, index) {
+            var imgbox = document.createElement("div");
+            var imgbox1 = document.createElement("div")
+            var img = document.createElement("img");
+            img.src = elem.img;
+
+            var name = document.createElement("p");
+            name.innerText = elem.name;
+
+            var price1 = document.createElement("p");
+            price1.innerText = elem.price1;
+
+            var off = document.createElement("p");
+            off.innerText = elem.off;
+            var price2 = document.createElement("p");
+            price2.innerText = elem.price2;
+            imgbox1.append(img)
+
+            imgbox.append(imgbox1, name, price1, off, price2);
+
+            document.querySelector("body").append(imgbox);
+            // localStorage.setItem("gift_data", JSON.stringify(tr))
+        });
+    }
+</script>

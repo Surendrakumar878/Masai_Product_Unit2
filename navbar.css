@@ -1,0 +1,251 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: transparent;
+  font-family: Arial, Helvetica, sans-serif;
+  
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 10px;
+  border: none;
+  outline: none;
+  color: #d61f27;
+  padding: 14px 16px;
+  background-color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.dropbtn > hr {
+  border: none;
+}
+.dropbtn:hover > hr {
+  border-bottom: 3px solid #d61f27;
+}
+
+.dropbtn:hover {
+  color: white;
+
+  /* text-decoration: underline; */
+}
+.navbar button:hover,
+.dropdown:hover .dropbtn {
+  color: #d61f27;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  left: 0;
+  /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);  */
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  
+  float: left;
+  width: 16%;
+  margin: auto;
+  padding: 10px;
+  display: grid;
+  justify-content: space-evenly;
+  /* align-content: space-around; */
+  background-color: white;
+  height: auto;
+}
+.column > hr {
+  width: 100%;
+}
+
+.column a {
+  float: none;
+  font-size: 14px;
+  color: #393939;
+  padding: 7px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.column > a:hover,
+h3 > a:hover {
+  /* overflow: hidden; */
+  /* position: absolute; */
+  /* width: auto; */
+  color: #00819d;
+  border-bottom: 3px solid #00819d;
+  border-color: #00819d;
+  transition: 300ms;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+.bold {
+  font-weight: bold;
+}
+.blue {
+  color: #00819d !important ;
+}
+.blue:hover > hr {
+  border-bottom: 3px solid #00819d !important;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  /* display: grid; */
+  /* grid-template-rows: repeat(auto); */
+}
+
+.column > img {
+  position: absolute;
+  cursor: pointer;
+
+  /* top: 10%; */
+  height: auto;
+  width: auto;
+  background-repeat: no-repeat;
+}
+.column:last-child > #navSign {
+  position: absolute;
+  bottom: 150px;
+  color: #00819d;
+  text-decoration: underline;
+}
+.column > .shopDress {
+  position: absolute;
+  bottom: 130px;
+  color: #00819d;
+  text-decoration: underline;
+  /* text-decoration: underline; */
+}
+.column > .shopActive {
+  position: absolute;
+  bottom: 100px;
+  color: #00819d;
+  text-decoration: underline;
+  /* text-decoration: underline; */
+}
+.column > .shopDress:hover {
+  color: #00819d;
+  border: none;
+  /* text-decoration: underline; */
+}
+.column:last-child > #navSign:hover {
+  border: none;
+  color: #00819d;
+  text-decoration: underline;
+}
+/* logo div   */
+.logoCon {
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+  margin: auto;
+  width: 85%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.searchdiv {
+  height: auto;
+  width: 60%;
+  border: 2px solid #bbbbbb;
+  position: relative;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+.searchdiv > #searchBar {
+  border: none;
+  text-indent: 5px;
+  height: auto;
+  width: 100%;
+  padding: 0 10px;
+  font-size: 18px;
+  box-sizing: content-box;
+}
+
+#searchBar:focus {
+  outline: none;
+}
+img {
+  background-size: 83px 36px;
+  height: 36px;
+  width: 83px;
+}
+.searchdiv > i {
+  /* position: absolute; */
+  margin: 10px;
+  color: #bbbbbb !important;
+  left: 20px;
+  /* background-repeat: no-repeat; */
+  font-size: 30px;
+}
+.btnCart {
+  /* display: flex; */
+  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  /* align-content: center; */
+}
+
+.btnCart > a {
+  font-size: 20px;
+  color: #333;
+  text-decoration: none;
+}
+.btnCart > i {
+  color: #bbbbbb;
+}
+#cart > i{
+  font-size: 23px;
+  /* color:; */
+}
+.offerRow{
+  background-color: #00819d;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 1px;
+  color: white;
+  text-align: center;
+}
+.offerRow > p{
+  font-size: 18px;
+}
+.offerRow > p> a{
+  color: white;
+
+}
