@@ -31,7 +31,7 @@
     height: 30px;
     width: 100%;
 }
-button{
+#btn-footer{
     background: #00819d ;
     color: #fff;
     font-weight: 400;
@@ -42,7 +42,7 @@ button{
     line-height: 1.4;
 
 }
-button:hover{
+#btn-footer:hover{
     cursor: pointer;
     background-color: #fff;
     color: #00819d;
@@ -72,7 +72,7 @@ button:hover{
     color: #00819d;
     text-decoration:underline;
 }
-h3{
+.heading-footer{
    margin-left: 40px;
    margin-bottom: -10px;
    line-height: 25px;
