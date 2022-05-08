@@ -1,7 +1,10 @@
 #container {
-    /* position: static; */
     width: 100%;
     padding: 0px 40px 0px 40px;
+}
+
+.fa-star {
+    color: teal;
 }
 
 #gift {
@@ -10,11 +13,11 @@
     /* background-image: url("https://n.nordstrommedia.com/id/5a42dc96-aff4-4ace-8628-3f7923cf9a96.jpeg?h=200&w=1608"); */
     /* height: 95px; */
     /* margin-bottom: 62px; */
-    position: absolute;
+    position: relative;
     margin-bottom: 40px;
 }
 
-a {
+#gift>a {
     color: teal;
     text-underline-offset: 0.2em;
 }
@@ -85,6 +88,34 @@ a {
     gap: 10px;
 }
 
+#flashbox1>div>div {
+    display: flex;
+    /* margin: auto; */
+    /* padding: 5px; */
+}
+
+#flashbox1>div>div>span {
+    padding-left: 10px;
+}
+
+#flashbox1>div>div+p {
+    text-decoration: line-through;
+}
+
+#Trendingnowbox>div>div:nth-child(1) {
+    /* padding-left: 10px; */
+    display: flex;
+    height: 380px;
+}
+
+#Trendingnowbox>div>div:nth-child(2)+p {
+    text-decoration: line-through;
+}
+
+#Trendingnowbox>div:nth-child(2)+p {
+    margin-top: 10px;
+}
+
 #spring {
     text-align: center;
     margin-bottom: 40px;
@@ -112,6 +143,13 @@ a {
     gap: 10px;
 }
 
+#str1,
+#str2,
+#str3 {
+    /* content: none; */
+    /* place-items: none; */
+}
+
 
 /* #Trendingnowbox>div {
     width: 20%;
@@ -119,7 +157,12 @@ a {
 
 #Trendingnowbox>div>div {
     width: 100%;
-    height: 380px;
+    height: 27px;
+    display: flex;
+}
+
+#Trendingnowbox>div>div>span {
+    padding-left: 10px;
 }
 
 #Trendingnowbox>div>img {
@@ -264,16 +307,6 @@ img {
 .anchor>a {
     margin-left: 10px;
     color: teal;
-}
-
-#mas {
-    position: absolute;
-    border: 1px solid black;
-    width: 40px;
-    height: 40px;
-    right: 20px;
-    z-index: index -1;
-    top: 10px;
 }
 
 @media all and (min-width: 450px) and (max-width: 750px) {
