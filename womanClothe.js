@@ -552,6 +552,55 @@ document.querySelector(".main").innerHTML="";
 
 data.forEach(function(el){
 
+<<<<<<< HEAD
+var div=document.createElement("div");
+
+var img=document.createElement("img");
+img.setAttribute("src",el.img);
+
+var btn=document.createElement("button");
+btn.innerText="View More"
+btn.addEventListener("click",function(){
+  btnData(el);
+})
+
+
+var name=document.createElement("h3");
+name.innerText=el.name;
+
+var brand=document.createElement("p");
+brand.innerText=el.brand;
+
+var size=document.createElement("p");
+size.innerText=el.size;
+
+var price=document.createElement("spen");
+price.innerText=el.price;
+
+var discount=document.createElement("h5");
+discount.innerText=el.discount;
+
+var strike=document.createElement("p");
+strike.innerText=el.strike;
+
+var about=document.createElement("h4");
+about.innerText="Free Shipping on Orders $89+"
+
+div.append(img,btn,name,brand,size,price,discount,strike,about);
+
+var main=document.querySelector(".main").append(div);
+})
+
+function btnData(el){
+window.location.href="womanView.html"
+console.log(el)
+var viewData=[];
+viewData.push(el);
+localStorage.setItem("view",JSON.stringify(viewData));
+}
+
+}
+=======
     var div=document.createElement("div");
     var imgDiv=document.createElement("div");
 
@@ -618,3 +667,4 @@ data.forEach(function(el){
         }
 
         }
+>>>>>>> 1603a8d7cd2031458c8bc5cbcd02bf1af34227e0
