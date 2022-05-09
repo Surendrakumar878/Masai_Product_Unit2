@@ -939,6 +939,7 @@ function display(data){
 
     data.forEach(function(el){
 
+<<<<<<< HEAD
         var div=document.createElement("div");
 
         var img=document.createElement("img");
@@ -949,6 +950,21 @@ function display(data){
         btn.addEventListener("click",function(){
           btnData(el);
         })
+=======
+      var div=document.createElement("div");
+      var imgDiv=document.createElement("div");
+
+      var img=document.createElement("img");
+      img.setAttribute("src",el.img);
+
+      var btn=document.createElement("button");
+      btn.innerText="Quick View"
+      btn.addEventListener("click",function(){
+      btnData(el);
+      })
+      imgDiv.append(img,btn)
+        
+>>>>>>> 1603a8d7cd2031458c8bc5cbcd02bf1af34227e0
         
 
         var name=document.createElement("h3");
@@ -958,7 +974,11 @@ function display(data){
         brand.innerText=el.brand;
 
         var size=document.createElement("p");
+<<<<<<< HEAD
         size.innerText=el.size;
+=======
+        size.innerText="Size :"+el.size;
+>>>>>>> 1603a8d7cd2031458c8bc5cbcd02bf1af34227e0
 
         var price=document.createElement("spen");
         price.innerText=el.price;
@@ -969,10 +989,35 @@ function display(data){
         var strike=document.createElement("p");
         strike.innerText=el.strike;
 
+<<<<<<< HEAD
         var about=document.createElement("h4");
         about.innerText="Free Shipping on Orders $89+"
 
         div.append(img,btn,name,brand,size,price,discount,strike,about);
+=======
+        var rating=document.createElement("div")
+        rating.setAttribute("class" , "rating")
+            var i1=document.createElement("i");
+            i1.setAttribute("class","fa fa-star checked");
+
+            var i2=document.createElement("i");
+            i2.setAttribute("class","fa fa-star checked")
+            var i3=document.createElement("i");
+            i3.setAttribute("class","fa fa-star checked")
+            var i4=document.createElement("i");
+            i4.setAttribute("class","fa fa-star")
+            var i5=document.createElement("i");
+            i5.setAttribute("class","fa fa-star")
+            var i6=document.createElement("i");
+            i6.innerText="(51)";
+
+            rating.append(i1,i2,i3,i4,i5,i6);
+
+        var about=document.createElement("h4");
+        about.innerText="Free Shipping on Orders $89+"
+
+        div.append(imgDiv,brand,name,size,price,discount,strike,rating,about);
+>>>>>>> 1603a8d7cd2031458c8bc5cbcd02bf1af34227e0
 
         var main=document.querySelector(".main").append(div);
     })

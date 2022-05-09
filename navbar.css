@@ -1,8 +1,16 @@
 * {
   box-sizing: border-box;
+<<<<<<< HEAD
   margin:0px;
 }
 
+=======
+}
+
+body {
+  margin: 0;
+}
+>>>>>>> 1603a8d7cd2031458c8bc5cbcd02bf1af34227e0
 
 .navbar {
   overflow: hidden;
@@ -190,6 +198,7 @@
 .searchdiv {
   height: auto;
   width: 60%;
+<<<<<<< HEAD
   border: 1px solid #bbbbbb;
   position: relative;
   display: flex;
@@ -201,6 +210,9 @@
   width: 60%;
   border: 1px solid #bbbbbb;
   border-bottom: 3px solid;
+=======
+  border: 2px solid #bbbbbb;
+>>>>>>> 1603a8d7cd2031458c8bc5cbcd02bf1af34227e0
   position: relative;
   display: flex;
   align-items: center;
@@ -219,7 +231,11 @@
 #searchBar:focus {
   outline: none;
 }
+<<<<<<< HEAD
 .logoCon > a>.company-logo {
+=======
+.logoCon > .company-logo {
+>>>>>>> 1603a8d7cd2031458c8bc5cbcd02bf1af34227e0
   background-size: 83px 36px;
   height: 36px;
   width: 83px;
@@ -255,7 +271,11 @@
   width: 10%;
 }
 
+<<<<<<< HEAD
 #cart >a> :nth-child(1) {
+=======
+#cart > :nth-child(1) {
+>>>>>>> 1603a8d7cd2031458c8bc5cbcd02bf1af34227e0
   width: 10px;
   height: 5px; /* as the half of the width */
   border-top-left-radius: 100px;
@@ -264,6 +284,7 @@
   border-bottom: 0;
   margin: auto;
 }
+<<<<<<< HEAD
 #cart>a > :nth-child(2) {
   border: 1px solid black;
   width: 25px;
@@ -272,6 +293,9 @@
   justify-content: center;
 }
 #cart>a > :nth-child(2)>p{
+=======
+#cart > :nth-child(2) {
+>>>>>>> 1603a8d7cd2031458c8bc5cbcd02bf1af34227e0
   border: 1px solid black;
   width: 25px;
   display: flex;
