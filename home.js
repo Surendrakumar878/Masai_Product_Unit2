@@ -189,7 +189,7 @@ var data5 = [{
         price2: "$23.00",
     },
 ]
-localStorage.setItem("products", JSON.stringify(data1))
+localStorage.setItem("prodes", JSON.stringify(data1))
     // imagebox-------------------------------------------------------------------------------------------------
 function displayData1(data1) {
     data1.forEach(function(elem) {
@@ -356,5 +356,15 @@ document.querySelector("#men").addEventListener("click", function() {
 })
 
 function dis() {
+
+}
+var obj = JSON.parse(localStorage.getItem("signupData"))
+console.log(obj)
+    // document.querySelector("#nameHeading").innerText = "Welcome," + " " + obj.fname + obj.lname + "!"
+
+document.querySelector(".SignUp").innerText = "Hi," + obj.fname + obj.lname || 'Sign in'
+
+if (document.querySelector(".SignUp").innerText == "Hi," + obj.fname + obj.lname) {
+    document.querySelector(".SignUp").href = "#"
 
 }

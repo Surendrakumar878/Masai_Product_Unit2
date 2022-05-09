@@ -301,11 +301,11 @@ img {
     color: aqua;
 }
 
-.anchor {
+.ancho {
     display: flex;
 }
 
-.anchor>a {
+.ancho>a {
     margin-left: 10px;
     color: teal;
 }
