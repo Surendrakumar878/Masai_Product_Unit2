@@ -230,7 +230,7 @@
     /* justify-content: center; */
     /* align-items: center; */
     /* align-content: center; */
-    width: 70px;
+    width: 80px;
     padding-top: 10px;
     /* text-decoration: ; */
   }
@@ -240,12 +240,16 @@
     color: #333;
     text-decoration: none;
   }
+  .btnCart > a:hover {
+text-decoration: none;
+color:#333 ;
+  }
   .btnCart > i {
     color: #bbbbbb;
   }
   
   #cart > :nth-child(1){
-    width: 10px;
+    width: 15px;
     height: 5px; /* as the half of the width */
     border-top-left-radius: 100px;
     border-top-right-radius: 100px;

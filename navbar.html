@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="SignUp.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="navbar.css" />
+
+    <title></title>
+  </head>
+  <body>
+    <div id="body">
     <div class="offerRow">
-        <p>
-          <span>Give Mom $150 in Gift Cards, earn a $25 Promo Card!</span> Ends
-          May 9 at 1pm ET. Restrictions apply. Online only.
-          <a href="#">Shop Gift Cards & See Restrictions</a>
-        </p>
-      </div>
+      <p class="offerLine">
+        <span class="spanLine"
+          >Give Mom $150 in Gift Cards, earn a $25 Promo Card!</span
+        >
+        Ends May 9 at 1pm ET. Restrictions apply. Online only.
+        <a href="#">Shop Gift Cards & See Restrictions</a>
+      </p>
+    </div>
     <div id="fullMenu">
       <div class="logoCon">
-        <a href="/index.html">
-        <img class="company-logo" src="img/nordstrom-rack-logo.svg" alt="" />
-      </a>
+        <a href="index.html">
+          <img class="company-logo" src="img/nordstrom-rack-logo.svg" alt="" />
+        </a>
         <div class="searchdiv">
           <i class="fa-solid fa-magnifying-glass"></i>
           <input
@@ -29,16 +33,17 @@
           />
         </div>
         <div id="cartAndSignin">
-        <div class="btnCart">
-          <a href="SignUp.html" id="SignUp">Sign Up</a>    
-          <i class="fa-solid fa-chevron-down"></i>
-
+          <div class="btnCart">
+            <a href="SignUp.html">Sign in</a>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div id="cart">
+            <a href="/cart.html">
+            <div id="upeerCart"></div>
+            <div id="mainCart"><p id="innerCartValue"></p></div>
+          </a>
+          </div>
         </div>
-        <div id="cart">
-          <div id="upeerCart"></div>
-          <div id="mainCart">0</div>
-        </div>
-      </div>
       </div>
       <hr id="hrTagLine" />
       <!-- </div> -->
@@ -55,9 +60,9 @@
           <div class="dropdown-content">
             <div class="row">
               <div class="column">
-                <a href="#">Clearance: Get Inspired</a>
+                <a href="#" class="bold">Clearance: Get Inspired</a>
                 <hr />
-                <a href="#">Women</a>
+                <a href="Women.html">Women</a>
 
                 <a href="#">Clothing</a>
                 <a href="#">Shoes</a>
@@ -68,15 +73,15 @@
                 <a href="#">Accessories</a>
               </div>
               <div class="column">
-                <h3><a href="#">Men</a></h3>
+                <a href="#" class="bold">Men</a>
                 <a href="#">Clothing</a>
                 <a href="#">Shoes</a>
                 <a href="#">Watches</a>
 
-                <h3><a href="#">Designer</a></h3>
+                <a href="#" class="bold">Designer</a>
               </div>
               <div class="column">
-                <h3><a href="#"> Kids</a></h3>
+                <a href="#" class="bold"> Kids</a>
                 <a href="#">Girls' Clothing</a>
                 <a href="#">Girls' Shoes</a>
                 <a href="#">Boys' Clothing</a>
@@ -84,10 +89,10 @@
                 <a href="#">kids' Shoes</a>
                 <a href="#">baby Clothing & Shoes</a>
 
-                <h3><a href="#"> Activewear</a></h3>
+                <a href="#" class="bold"> Activewear</a>
               </div>
               <div class="column">
-                <h3><a href="#"> Home</a></h3>
+                <a href="#" class="bold"> Home</a>
                 <a href="#">Art & Wall Decor</a>
                 <a href="#">Bath</a>
                 <a href="#">Bedding</a>
@@ -95,12 +100,17 @@
                 <a href="#">Electronic & Teth Accessories</a>
                 <a href="#">Kitchen & Tabletop</a>
                 <a href="#">Storage & Cleaning</a>
-                <h3><a href="#">Beauty</a></h3>
+                <a href="#" class="bold">Beauty</a>
                 <a href="#">Makeup</a>
                 <a href="#">Skincare</a>
               </div>
               <div class="column">
-                <img src="img/branding.webp" alt="" />
+                <img
+                  class="offerImg"
+                  class="offerImg"
+                  src="img/branding.webp"
+                  alt=""
+                />
                 <a href="#" id="navSign">Sign in</a>
               </div>
             </div>
@@ -216,6 +226,7 @@
               </div>
               <div class="column">
                 <img
+                  class="offerImg"
                   src="https://n.nordstrommedia.com/id/1e34e93e-9b0e-4767-bcd5-28199cb3ad12.jpg"
                   alt=""
                 />
@@ -329,7 +340,7 @@
                 <a href="#" class="bold">Athletic Gear & Equipment</a>
               </div>
               <div class="column">
-                <img src="img/Boys Branding.jpg" alt="" />
+                <img class="offerImg" src="img/Boys Branding.jpg" alt="" />
                 <a href="#" class="shopDress">Shop Denim</a>
               </div>
             </div>
@@ -435,7 +446,7 @@
                 <a href="#" class="bold">Toys</a>
               </div>
               <div class="column">
-                <img src="img/Kids dress.jpg" alt="" />
+                <img class="offerImg" src="img/Kids dress.jpg" alt="" />
                 <a href="#" class="shopDress">Shop Kids' Swim</a>
               </div>
             </div>
@@ -545,7 +556,7 @@
                 <a href="#">UGG</a>
               </div>
               <div class="column">
-                <img src="img/ShoesBrand.jpg" alt="" />
+                <img class="offerImg" src="img/ShoesBrand.jpg" alt="" />
                 <a href="#" class="shopDress">Shop Heeled Sandals</a>
               </div>
             </div>
@@ -636,7 +647,7 @@
                 <a href="#" class="bold">Athletic Gear & Equipment</a>
               </div>
               <div class="column">
-                <img src="img/ActiveProducts.jpg" alt="" />
+                <img class="offerImg" src="img/ActiveProducts.jpg" alt="" />
                 <a href="#" class="shopActive">Shop Active New Arrivals</a>
               </div>
             </div>
@@ -736,6 +747,7 @@
               </div>
               <div class="column">
                 <img
+                  class="offerImg"
                   src="https://n.nordstrommedia.com/id/4ebbaf5f-a74d-44fb-b3df-b1ebb81c0c76.jpg"
                   alt="BagProduct"
                 />
@@ -840,6 +852,7 @@
               </div>
               <div class="column">
                 <img
+                  class="offerImg"
                   src="https://n.nordstrommedia.com/id/cf7f8ecc-9f22-435a-bd72-8326cc77efda.jpg"
                   alt="BagProduct"
                 />
@@ -944,7 +957,11 @@
                 <a href="#" class="bold">Men's Grooming & Cologne</a>
               </div>
               <div class="column">
-                <img src="img/beautyProduct.jpg" alt="BagProduct" />
+                <img
+                  class="offerImg"
+                  src="img/beautyProduct.jpg"
+                  alt="BagProduct"
+                />
                 <a href="#" class="shopDress">Shop Skin Care Tools</a>
               </div>
             </div>
@@ -1002,7 +1019,11 @@
               </div>
 
               <div class="column">
-                <img src="img/GiftProduct.jpg" alt="BagProduct" />
+                <img
+                  class="offerImg"
+                  src="img/GiftProduct.jpg"
+                  alt="BagProduct"
+                />
                 <a href="#" class="shopActive">Mother's Day Gift</a>
               </div>
             </div>
@@ -1011,7 +1032,7 @@
         <!-- Gifts nav end -->
         <!-- Flash Events nav start -->
         <div class="dropdown">
-          <button class="dropbtn blue">
+          <button class="dropbtn blueBlack">
             Flash Events
             <hr />
           </button>
@@ -1051,7 +1072,11 @@
               </div>
 
               <div class="column">
-                <img src="img/flashProducts.jpg" alt="BagProduct" />
+                <img
+                  class="offerImg"
+                  src="img/flashProducts.jpg"
+                  alt="BagProduct"
+                />
                 <a href="#" id="navSign">Shop Limited-Time Flah</a>
               </div>
             </div>
@@ -1061,129 +1086,11 @@
       </div>
       <!-- Navbar End -->
     </div>
-    <div class="signupPage">
-        <h3>Sign In | Create Account</h3>
-        <p>Enter your email to get started.</p>
-        <form action="" id="SignUpForm">
-            <p>Email</p>
-            <input type="email" id="Email">
-            <p>By tapping Next, you agree to our <span>Privacy Policy</span>and <span>Terms & Conditions.</span></p>
-            <input type="submit" id="submit" value="Next">
-        </form>
-    </div>
-    <div id="footer">
-    <footer>
-      <div id="footer-1-box">
-          <div class="upper-box">
-              <span>Get E-mail Updates:</span>
-          </div>
-          <div class="Emai-box"><span><input type="text" placeholder="E-mail Address"></span></div>
-          <div class="signupbox"><button>Sign Up</button></div>
-      </div>
-      <div class="footer-down-box">
-          <div id="footer-box">
-              <div>
-                  <div class="left-content">
-                      <section>
-                          <div>
-                              <h3>Cutomer Services</h3>
-                              <ul class="list-content">
-                                  <li><a href="footer.html">Order Status</a></li>
-                                  <li><a href="footer.html"> Guest Returns</a></li>
-                                  <li><a href="footer.html">Shipping & Return Policy</a></li>
-                                  <li><a href="footer.html">Gift Cards</a></li>
-                                  <li><a href="footer.html">FAQ</a></li>
-                                  <li><a href="footer.html">Contact Us</a></li>
-                              </ul>
-                          </div>
-                      </section>
-                      <section>
-                          <div>
-                              <h3>About Us</h3>
-                              <ul class="list-content">
-                                  <li><a href="footer.html">About Our Brand</a></li>
-                                  <li><a href="footer.html">The Nordy Club</a></li>
-                                  <li><a href="footer.html">Store Locator</a></li>
-                                  <li><a href="footer.html">All Brands</a></li>
-                                  <li><a href="footer.html">Careers</a></li>
-                                  <li><a href="footer.html">Get Email Updates</a></li>
-                                  <li><a href="footer.html">Nordstorm Blog</a></li>
-                                  <li><a href="footer.html">Nordy Podcast</a></li>
-                              </ul>
-                          </div>
-                      </section>
-                      <section>
-                          <div>
-                              <h3>Nordstorm Rack & The Community</h3>
-                              <ul class="list-content">
-                                  <li><a href="footer.html">Corporate Social Responsibility</a></li>
-                                  <li><a href="footer.html">Diversity,inclusion & Belonging</a></li>
-                                  <li><a href="footer.html">Shipping & Return Policy</a></li>
-                                  <li><a href="footer.html">Big Brothers Big Sisters</a></li>
-                                  <li><a href="footer.html">Donate Clothes</a></li>
-                              </ul>
-                          </div>
-                      </section>
-                      <section>
-                          <div>
-                              <h3>Nordstorm Card</h3>
-                              <ul class="list-content">
-                                  <li><a href="footer.html">Apply for a Nordstorm Card</a></li>
-                                  <li><a href="footer.html">Pay My Bill</a></li>
-                                  <li><a href="footer.html">Manage My Nordstorm Card</a></li>
-                              </ul>
-                          </div>
-                      </section>
-                      <section>
-                          <div>
-                              <h3>Nordstorm, Inc.</h3>
-                              <ul class="list-content">
-                                  <li><a href="footer.html">Nordstorm</a></li>
-                                  <li><a href="footer.html">Nordstorm Canada</a></li>
-                                  <li><a href="footer.html">Trunk Club</a></li>
-                                  <li><a href="footer.html">HauteLook</a></li>
-                                  <li><a href="footer.html">Investor Relations</a></li>
-                                  <li><a href="footer.html">Press Releases</a></li>
-                                  <li><a href="footer.html">Nordstorm Media Network</a></li>
-                              </ul>
-                          </div>
-                      </section>
-                  </div>
-                  <ul class="bottom-content">
-                      <li><a href="footer.html">Your Privacy Rights</a></li>
-                      <li><a href="footer.html">Do Not Sell My Info</a></li>
-                      <li><a href="footer.html">Terms & Conditions</a></li>
-                      <li><a href="footer.html">Internet Based Ads</a></li>
-                      <li><a href="footer.html">California Supply Chain Act</a></li>
-                      <li>©2022 Nordstrom Rack</li>
-                  </ul>
-              </div>
-              <div class="right-content">
-                  <div>
-                      <section><span><i class="fa-solid fa-mobile-screen"></i></span> <a>Download Our Apps</a>
-                      </section>
-                      <section>
-                          <ul id="social-icons">
-                              <li><a class="link-icons" href="https://www.facebook.com/NordstromRack"><i
-                                          class="fa-brands fa-facebook"></i></a></li>
-                              <li><a class="link-icons" href="https://twitter.com/nordstromrack"><i
-                                          class="fa-brands fa-twitter-square"></i></a></i></li>
-                              <li><a class="link-icons" href="https://www.pinterest.com/nordstromrack/"><i
-                                          class="fa-brands fa-pinterest-square"></i></a></li>
-                              <li><a class="link-icons" href="https://www.instagram.com/nordstromrack/"><i
-                                          class="fa-brands fa-instagram-square"></i></a></li>
-                          </ul>
-                      </section>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </footer>
-</div>
-</body>
+  </div>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/cc7490e492.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="navbar.js"></script>
 </html>
-<script
-src="https://kit.fontawesome.com/cc7490e492.js"
-crossorigin="anonymous"
-></script>
-<script src="SignUp.js"></script>

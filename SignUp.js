@@ -14,3 +14,12 @@ function getMail(){
 
     window.location.href = "createAccount.html";
 }
+
+// if(document.querySelector("#SignUpValue").innerText=="Hi,"+obj.fname+obj.lname){
+//     document.querySelector("#SignUpValue").href="#"
+  
+// }
+
+// document.querySelector('#signUpValue').innerText='Sign Up'
+// var data=JSON.stringify(localStorage.setItem("SignupData"))
+

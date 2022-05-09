@@ -1,0 +1,153 @@
+#main>div{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding-top: 30px;
+}
+#main>div>div:nth-child(1){
+    width: 45%;
+    margin: 0%;
+    padding-top: -20%;
+   
+}
+
+#main>div>div:nth-child(2){
+    width: 50%;
+    margin: 0%;
+    padding-right: 42px;
+}
+#imgID{
+   margin-top: -30%;
+   padding-top: -21%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+img{
+    height: 90%;
+    width: 100%;
+    transition: transform 1s;
+    
+}
+img:hover {
+    -ms-transform: scale(0.5); 
+    -webkit-transform: scale(0.4); 
+    transform: scale(1.1); 
+    cursor: pointer;
+    border-radius: 20px;
+  }
+
+
+.checked {
+    color: teal;
+  }
+#name{    
+     font-size: 25px;
+      margin: auto;
+     
+  }
+
+  #maha{
+      display: flex;
+      color: red;
+  }
+
+  #price{
+      font-size: 30px;
+      
+      font-weight: 900;
+      
+  }
+
+  #discount{
+      margin: auto;
+      margin-left: 10px;
+    
+    }
+    #strike{
+        margin: auto;
+        margin-top: -25px;
+        text-decoration:line-through;
+        font-size: 20px;
+    }
+
+    #size,#color{
+        width: 100%;
+        height: 40px;
+        border-radius: 15px;
+        padding-left: 10px;
+        margin-bottom: 20px;
+    }
+
+ #addCart{
+     width: 100%;
+     height: 40px;
+     background-color: rgb(5, 97, 149);
+     color: white;
+     border: 0ch;
+     font-size: 14px;
+     font-weight: 600;
+     font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    margin-bottom: 77px;
+ }
+ #addCart:hover{
+     cursor: pointer;
+     background-color: white;
+     color:rgb(5, 97, 149) ;
+     border: 1px solid rgb(5, 97, 149);
+ }
+ #page{
+     text-align: center;
+ }
+
+ h1>a{
+     text-align: right;
+     margin-left: 90%;
+     font-style: none;
+     text-decoration: none;
+ }
+
+            @media all and (min-width:50px) and (max-width:450px){
+                #main>div{
+                
+                width: 90%;
+            }
+           
+            #main>div>div:nth-child(1){
+                width: 45%;
+                margin: 0%;
+                padding-top: -20%;
+            
+            }
+
+            #main>div>div:nth-child(2){
+                width: 50%;
+                margin: 0%;
+                padding-right: 42px;
+            }
+            }
+
+            @media all and (min-width:451px) and (max-width:750px){
+                #main>div{
+                
+                    width: 80%;
+                }
+               
+                #main>div>div:nth-child(1){
+                    width: 45%;
+                    margin: 0%;
+                    padding-top: -20%;
+                
+                }
+                
+                #main>div>div:nth-child(2){
+                    width: 50%;
+                    margin: 0%;
+                    padding-right: 42px;
+                }
+            }
+
+
