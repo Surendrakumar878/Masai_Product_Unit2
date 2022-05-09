@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="SignUp.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="transaction.css" />
+
+    <title></title>
+  </head>
+  <body>
+    <div class="mainhai">
     <div class="offerRow">
-        <p>
-          <span>Give Mom $150 in Gift Cards, earn a $25 Promo Card!</span> Ends
-          May 9 at 1pm ET. Restrictions apply. Online only.
-          <a href="#">Shop Gift Cards & See Restrictions</a>
-        </p>
-      </div>
+      <p>
+        <span>Give Mom $150 in Gift Cards, earn a $25 Promo Card!</span> Ends
+        May 9 at 1pm ET. Restrictions apply. Online only.
+        <a href="#">Shop Gift Cards & See Restrictions</a>
+      </p>
+    </div>
     <div id="fullMenu">
       <div class="logoCon">
         <a href="/index.html">
@@ -30,13 +32,14 @@
         </div>
         <div id="cartAndSignin">
         <div class="btnCart">
-          <a href="SignUp.html" id="SignUp">Sign Up</a>    
+          <a href="SignUp.html" id="SignUp"></a>
           <i class="fa-solid fa-chevron-down"></i>
-
         </div>
         <div id="cart">
+          <a href="/cart.html">
           <div id="upeerCart"></div>
-          <div id="mainCart">0</div>
+          <div id="mainCart"><p id="cartValue"></p></div>
+        </a>
         </div>
       </div>
       </div>
@@ -1061,129 +1064,29 @@
       </div>
       <!-- Navbar End -->
     </div>
-    <div class="signupPage">
-        <h3>Sign In | Create Account</h3>
-        <p>Enter your email to get started.</p>
-        <form action="" id="SignUpForm">
-            <p>Email</p>
-            <input type="email" id="Email">
-            <p>By tapping Next, you agree to our <span>Privacy Policy</span>and <span>Terms & Conditions.</span></p>
-            <input type="submit" id="submit" value="Next">
-        </form>
+    <div class="welcomeMenu">
+        <h3>Transaction</h3>
+        <form id="form2">
+          <h2>Payment Details</h2>
+          <label for="">Credit / Debit / ATM Card</label> <br>
+          <input id="cardNum" type="text" name="cardNumber" maxlength="16" autocomplete="cc-number" placeholder="Enter Card number (12345678)"> <br>
+          <label for="">CCV</label> <br>
+          <input id="ccv" type="password" name="ccv" autocomplete="cc-csc" maxlength="4" placeholder="Enter CVV (1234)"> <br>
+          <label for=""> Expiry data</label> <br>
+          <input id="exp" type="month" name="month" placeholder="YYYY-MM (2022-05)"> <br>
+          <!-- <input id="year" type="year" name="year" placeholder="Enter year"> <br> -->
+          <label for="">Name as per Card</label><br>
+          <input id="name" type="text" placeholder="Enter your name"> <br>
+          <input id="sendOtp" type="submit" value="Send OTP">
+      </form>
     </div>
-    <div id="footer">
-    <footer>
-      <div id="footer-1-box">
-          <div class="upper-box">
-              <span>Get E-mail Updates:</span>
-          </div>
-          <div class="Emai-box"><span><input type="text" placeholder="E-mail Address"></span></div>
-          <div class="signupbox"><button>Sign Up</button></div>
-      </div>
-      <div class="footer-down-box">
-          <div id="footer-box">
-              <div>
-                  <div class="left-content">
-                      <section>
-                          <div>
-                              <h3>Cutomer Services</h3>
-                              <ul class="list-content">
-                                  <li><a href="footer.html">Order Status</a></li>
-                                  <li><a href="footer.html"> Guest Returns</a></li>
-                                  <li><a href="footer.html">Shipping & Return Policy</a></li>
-                                  <li><a href="footer.html">Gift Cards</a></li>
-                                  <li><a href="footer.html">FAQ</a></li>
-                                  <li><a href="footer.html">Contact Us</a></li>
-                              </ul>
-                          </div>
-                      </section>
-                      <section>
-                          <div>
-                              <h3>About Us</h3>
-                              <ul class="list-content">
-                                  <li><a href="footer.html">About Our Brand</a></li>
-                                  <li><a href="footer.html">The Nordy Club</a></li>
-                                  <li><a href="footer.html">Store Locator</a></li>
-                                  <li><a href="footer.html">All Brands</a></li>
-                                  <li><a href="footer.html">Careers</a></li>
-                                  <li><a href="footer.html">Get Email Updates</a></li>
-                                  <li><a href="footer.html">Nordstorm Blog</a></li>
-                                  <li><a href="footer.html">Nordy Podcast</a></li>
-                              </ul>
-                          </div>
-                      </section>
-                      <section>
-                          <div>
-                              <h3>Nordstorm Rack & The Community</h3>
-                              <ul class="list-content">
-                                  <li><a href="footer.html">Corporate Social Responsibility</a></li>
-                                  <li><a href="footer.html">Diversity,inclusion & Belonging</a></li>
-                                  <li><a href="footer.html">Shipping & Return Policy</a></li>
-                                  <li><a href="footer.html">Big Brothers Big Sisters</a></li>
-                                  <li><a href="footer.html">Donate Clothes</a></li>
-                              </ul>
-                          </div>
-                      </section>
-                      <section>
-                          <div>
-                              <h3>Nordstorm Card</h3>
-                              <ul class="list-content">
-                                  <li><a href="footer.html">Apply for a Nordstorm Card</a></li>
-                                  <li><a href="footer.html">Pay My Bill</a></li>
-                                  <li><a href="footer.html">Manage My Nordstorm Card</a></li>
-                              </ul>
-                          </div>
-                      </section>
-                      <section>
-                          <div>
-                              <h3>Nordstorm, Inc.</h3>
-                              <ul class="list-content">
-                                  <li><a href="footer.html">Nordstorm</a></li>
-                                  <li><a href="footer.html">Nordstorm Canada</a></li>
-                                  <li><a href="footer.html">Trunk Club</a></li>
-                                  <li><a href="footer.html">HauteLook</a></li>
-                                  <li><a href="footer.html">Investor Relations</a></li>
-                                  <li><a href="footer.html">Press Releases</a></li>
-                                  <li><a href="footer.html">Nordstorm Media Network</a></li>
-                              </ul>
-                          </div>
-                      </section>
-                  </div>
-                  <ul class="bottom-content">
-                      <li><a href="footer.html">Your Privacy Rights</a></li>
-                      <li><a href="footer.html">Do Not Sell My Info</a></li>
-                      <li><a href="footer.html">Terms & Conditions</a></li>
-                      <li><a href="footer.html">Internet Based Ads</a></li>
-                      <li><a href="footer.html">California Supply Chain Act</a></li>
-                      <li>©2022 Nordstrom Rack</li>
-                  </ul>
-              </div>
-              <div class="right-content">
-                  <div>
-                      <section><span><i class="fa-solid fa-mobile-screen"></i></span> <a>Download Our Apps</a>
-                      </section>
-                      <section>
-                          <ul id="social-icons">
-                              <li><a class="link-icons" href="https://www.facebook.com/NordstromRack"><i
-                                          class="fa-brands fa-facebook"></i></a></li>
-                              <li><a class="link-icons" href="https://twitter.com/nordstromrack"><i
-                                          class="fa-brands fa-twitter-square"></i></a></i></li>
-                              <li><a class="link-icons" href="https://www.pinterest.com/nordstromrack/"><i
-                                          class="fa-brands fa-pinterest-square"></i></a></li>
-                              <li><a class="link-icons" href="https://www.instagram.com/nordstromrack/"><i
-                                          class="fa-brands fa-instagram-square"></i></a></li>
-                          </ul>
-                      </section>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </footer>
-</div>
-</body>
+  </div>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/cc7490e492.js"
+    crossorigin="anonymous"
+  ></script>
 </html>
-<script
-src="https://kit.fontawesome.com/cc7490e492.js"
-crossorigin="anonymous"
-></script>
-<script src="SignUp.js"></script>
+
+
+<script src="transaction.js"></script>
